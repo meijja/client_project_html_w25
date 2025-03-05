@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible'>
+    <title>Academic Resources</title>
 </head>
 <body>
 
     <header>
-            <a href = "">Skip to Main Content</a>
+        <a class = "skip" href = "#main">Skip to Main Content</a>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Page 1</a></li>
-                <li><a href = "page_2.html">Page 2</a></li>
-                <li><a href = "page_3.html">Page 3</a></li>
+            <a href="https://www.si.umich.edu/">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </a>
+            <ul id = "content">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="page_1.html">Academic</a></li>
+                <li><a href="page_2.html">Health</a></li>
+                <li><a href="page_3.html">Community</a></li>
             </ul>
         </nav>
-        <h1>Academic Support at UMSI</h1>
-
+        <h1>Academic Support</h1>
     </header>
+
     <main>
-        <div>
+        <div class="intro">
             <p>At the University of Michigan School of Information (UMSI), we are committed to supporting our students' academic success by offering a wide array of resources and services. Our academic advising team provides personalized guidance to help you navigate your curriculum, select courses, and address any academic challenges or questions you may encounter during your studies. UMSI students also have access to the extensive collections and study spaces within the University Library system, offering both digital and physical resources essential for research and coursework. Additionally, our specialized tutoring services and the UMSI Writing Center are available to support you in mastering complex subjects and enhancing your written communication skills. By utilizing these academic resources, UMSI students can thrive in their studies and achieve their educational goals.</p>
         </div>
 
         <div>
-            <article>
+            <article class="blueBox">
                 <h2>MSI Degree Requirements & Process</h2>
                 <p>Earning a Master of Science in Information at UMSI doesn&#39;t have to be confusing. With the resources below, you&#39; able to view degree requirements and course planning resources. Furthermore, MSI students are eligible to enroll in a secondary degree program or graduate certificate program, so if you're interested, click on the links below.</p>
                 <ul>
@@ -35,7 +41,7 @@
                     <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/msi-degree-requirements/dual-degrees-graduate-certificates">Dual Degrees & Graduate Certificates</a></li>
                 </ul>
             </article>
-            <article>
+            <article class="yelBox">
                 <h2>Academic Advising</h2>
                 <p>Get guidance from a qualified UMSI Academic Advisor on your academic plans! An academic advisor can help with:</p>
                 <ul>
@@ -50,7 +56,7 @@
                 </figure>
             </article>
 
-            <article>
+            <article class="blueBox">
                 <h2>UMSI Tutoring & Academic Support</h2>
                 <p>The Academic Success Team at UMSI offers peer tutoring in math and programming to support students inside and outside of the classroom. If you&#39;re interested in working with a peer tutor or becoming a peer tutor, click on <a href="https://sites.google.com/umich.edu/umsitutoring/home">this link</a>.</p>
                 <p>The Sweetland Center for Writing is also available to give writing support through a variety of formats, such as scheduled or drop-in appointments. To get consultation on your writing, click on <a href="https://lsa.umich.edu/sweetland">this link</a>.</p>
@@ -60,7 +66,7 @@
                 </figure>
             </article>
 
-            <article>
+            <article class="yelBox">
                 <h2>Study Spaces</h2>
                 <p>The University of Michigan has plenty of study spaces all over campus. Whether you&#39;re on Central or North campus, prefer somewhere quieter or somewhere collaborative, or just need to use a computer station, you can find and reserve the space you need. To explore what&#39;s available now, click on <a href="https://studyspaces.umich.edu/">this link</a>.</p>
                 <figure>
@@ -69,14 +75,16 @@
                 </figure>
             </article>
         </div>
-    
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </main>
+    
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <a href="https://www.si.umich.edu/">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </a>
+        <div>
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a><br><br>
+            <a id="contact" href="https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a>
+        </div>
     </footer>
     
 </body>

@@ -1,0 +1,248 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Style skip to main*/
+.skip {
+    height: 35px;
+    background-color: lightgrey;
+    position: absolute;
+    top: -40px;
+}
+
+.skip:focus {
+    position: static;
+    top: 20px;
+}
+
+/* Style nav bar*/
+nav {
+    background-color: #00274C;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    width: 100%;
+}
+
+nav img {
+    float: left;
+    padding: 16px 20px;
+    width: 13vw;
+    height: 13vw;
+}
+
+nav #content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav #content a {
+    float: left;
+    color: white;
+    text-align: left;
+    padding: 2vw 4vw;
+    text-decoration: none;
+    font-size: 5vw;
+    font-family: 'Atkinson Hyperlegible';
+}
+
+nav #content a.active {
+    color:#00274C;
+}
+
+nav a.active {
+    background-color: #FFCB05;
+    font-weight: bold;
+    border-radius: 2vw;
+}
+
+/* Style footer*/
+footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    background-color: #00274C;
+    width: 100%;
+    color: white;
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 5vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 5vw;
+    font-family: 'Atkinson Hyperlegible';
+}
+
+footer #contact {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 13vw;
+    height: 13vw;
+    padding: 3vw;
+}
+
+/*Style main content*/
+main img {
+    width: 80vw;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Atkinson Hyperlegible';
+    color:#00274C;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: left;
+    margin: 8vw;
+}
+
+p, figcaption, li {
+    color: black;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 4.2vw;
+    line-height: 1.5;
+    letter-spacing: 0.12;
+    word-spacing: 0.16;
+}
+
+h2 {
+    color: black;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 4.6vw;
+    line-height: 1.5;
+    letter-spacing: 0.12;
+    word-spacing: 0.16;
+    text-align: center;
+}
+
+h3 {
+    color:#00274C;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 4.2vw;
+    line-height: 1.5;
+    letter-spacing: 0.12;
+    word-spacing: 0.16;
+}
+
+.smallBox {
+    height: auto;
+    padding: 3vw;
+    border-radius: 8px;
+    background-color: #ffebb3;
+}
+
+.intro {
+    text-align: left;
+    margin: 7vw;
+}
+
+.indexResources {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 5vw;
+    gap: 2vw;
+    text-align: center;
+}
+
+.indexResources p {
+    height: auto;
+    padding: 3vw;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexResources p:nth-child(even) {
+    background-color: #00274C;
+    color: white;
+}
+
+.indexResources p:nth-child(odd) {
+    border: 0.3vw solid #00274C;
+    background-color:#FFCB05;
+}
+
+.blueBox {
+    background-color:#00274C;
+    margin: 4vw;
+    border-radius: 5vw;
+    padding: 5vw;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blueBox p{
+    color:white;
+}
+
+.blueBox figcaption{
+    color:lightgray;
+    text-align: center;
+    font-style: italic;
+    font-size: 3.5vw;
+}
+
+.blueBox h2{
+    color:#FFCB05;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.blueBox a{
+    color:white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blueBox img{
+    margin-top: 4vw;
+    border-radius: 2vw;
+}
+
+.yelBox {
+    background-color:#FFCB05;
+    margin: 4vw;
+    border-radius: 5vw;
+    padding: 5vw;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.yelBox figcaption{
+    text-align: center;
+    font-style: italic;
+    font-size: 3.5vw;
+}
+
+.yelBox h2{
+    color:#00274C;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.yelBox a{
+    color:#00274C;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.yelBox img{
+    margin-top: 4vw;
+    border-radius: 2vw;
+}

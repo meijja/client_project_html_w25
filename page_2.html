@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible'>
+    <title>Health and Wellness Resources</title>
 </head>
 <body>
 
     <header>
-            <a href = "">Skip to Main Content</a>
+        <a class = "skip" href = "#main">Skip to Main Content</a>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Page 1</a></li>
-                <li><a href = "page_2.html">Page 2</a></li>
-                <li><a href = "page_3.html">Page 3</a></li>
+            <a href="https://www.si.umich.edu/">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </a>
+            <ul id = "content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page_1.html">Academic</a></li>
+                <li><a class="active" href="page_2.html">Health</a></li>
+                <li><a href="page_3.html">Community</a></li>
             </ul>
         </nav>
         <h1>Health and Wellness Resources</h1>
-
     </header>
+
     <main>
-        <div>
+        <div class="intro">
             <p>The University of Michigan School of Information (UMSI) takes all aspects of student well-being seriously. By offering a variety of counseling and health services, we want our students to thrive academically, emotionally, and socially during their time at the university. UMSI also fosters a supportive community through peer mentorship programs and stress-reduction initiatives, ensuring that every student feels valued and empowered to reach their full potential. We aim to create an environment where students can excel in their studies while maintaining a healthy and balanced lifestyle.</p>
         </div>
 
@@ -52,14 +58,16 @@
                 <figcaption>Students at the Rackham Graduate Student Resource Fair.</figcaption>
             </figure>
         </section>
-    
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </main>
+
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <a href="https://www.si.umich.edu/">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </a>
+        <div>
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a><br><br>
+            <a id="contact" href="https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a>
+        </div>
     </footer>
     
 </body>

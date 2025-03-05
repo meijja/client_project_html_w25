@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible'>
     <title>Student Success Portal</title>
 </head>
-<body>
 
+<body>
     <header>
-  <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <a class = "skip" href = "#main">Skip to Main Content</a>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Page 1</a></li>
-                <li><a href = "page_2.html">Page 2</a></li>
-                <li><a href = "page_3.html">Page 3</a></li>
+            <a href="https://www.si.umich.edu/">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </a>
+            <ul id = "content">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="page_1.html">Academic</a></li>
+                <li><a href="page_2.html">Health</a></li>
+                <li><a href="page_3.html">Community</a></li>
             </ul>
         </nav>
         <h1>Student Success Portal</h1>
-
     </header>
+    
     <main>
-        <section>
-            <h2>Welcome to the UM Grad Success Navigator</h2>
-            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
-            <ol>
-                <li>Academic Resources</li>
-                <li>Physical Health</li>
-                <li>Mental Health</li>
-                <li>Life Outside Classroom</li>
-                <li>Contact</li>
-            </ol>
+        <section class="intro">
+            <h2 class="smallBox">Welcome to the UM Grad Success Navigator!</h2><br>
+            <p>This guide is set up to help you be successul inside and outside of the classroom. We have included the following resources throughout our site:</p>
         </section>
+        <div class="indexResources">
+            <p >Academic Resources</p>
+            <p>Physical Health</p>
+            <p>Mental Health</p>
+            <p>Life Outside the Classroom</p>
+        </div>
+        
         <section>
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
@@ -64,12 +68,10 @@
             </article>
             <article>
                 <h3>Wellness Coaching:</h3>
-
                 <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
             </article>
             <article>
                 <h3>Mindfulness Resources:</h3>
-
                 <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
             </article>
             <article>
@@ -95,7 +97,13 @@
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <a href="https://www.si.umich.edu/">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </a>
+        <div>
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a><br><br>
+            <a id="contact" href="https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a>
+        </div>
+    </footer>
 </body>
 </html>

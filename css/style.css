@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    padding-top: 30vw;
+    padding-top: 26vw;
 }
 
 /* Style skip to main*/
@@ -238,6 +238,10 @@ h3 {
     display: list-item;
     margin-top: 2vw;
 }
+
+.list li::marker {
+    color: inherit;
+  }
 
 .yelBox {
     background-color:#FFCB05;

@@ -17,9 +17,7 @@ body {
     top: -40px;
     font-family: 'Atkinson Hyperlegible';
     font-size: 4.2vw;
-    line-height: 1.5;
-    letter-spacing: 0.12;
-    word-spacing: 0.16;
+    line-height: 1.5em;
 }
 
 .skip:focus {
@@ -128,9 +126,7 @@ p, figcaption, li {
     color: black;
     font-family: 'Atkinson Hyperlegible';
     font-size: 4.2vw;
-    line-height: 1.5;
-    letter-spacing: 0.12;
-    word-spacing: 0.16;
+    line-height: 1.5em;
 }
 
 a {
@@ -142,9 +138,7 @@ h2 {
     color: black;
     font-family: 'Atkinson Hyperlegible';
     font-size: 4.6vw;
-    line-height: 1.5;
-    letter-spacing: 0.12;
-    word-spacing: 0.16;
+    line-height: 1.5em;
     text-align: center;
 }
 
@@ -152,9 +146,7 @@ h3 {
     color:#00274C;
     font-family: 'Atkinson Hyperlegible';
     font-size: 4.2vw;
-    line-height: 1.5;
-    letter-spacing: 0.12;
-    word-spacing: 0.16;
+    line-height: 1.5em;
     text-decoration: underline;
 }
 

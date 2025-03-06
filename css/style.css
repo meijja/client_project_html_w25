@@ -37,6 +37,7 @@ nav {
     z-index: 1000;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     padding: 2vw;
     width: 100%;
     box-shadow: 0vw 2vw 3vw rgba(0, 0, 0, 0.3);
@@ -44,7 +45,7 @@ nav {
 
 nav img {
     float: left;
-    padding: 16px 20px;
+    padding: 1vw 2vw;
     width: 13vw;
     height: 13vw;
 }
@@ -52,13 +53,14 @@ nav img {
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 
 nav ul a {
     float: left;
     color: white;
     text-align: left;
-    padding: 2vw 4vw;
+    padding: 1vw 2vw;
     text-decoration: none;
     font-size: 5vw;
     font-family: 'Atkinson Hyperlegible';

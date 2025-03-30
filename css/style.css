@@ -741,6 +741,7 @@ iframe {
         margin-bottom: 15px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        font-family: 'Atkinson Hyperlegible';
     }
 
     .suggestionForm button {

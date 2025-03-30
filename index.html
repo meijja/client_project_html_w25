@@ -36,7 +36,7 @@
     <main id="main">
         <section class="intro">
             <h2 class="smallBox" id="mobile">Welcome to the UM Grad Success Navigator!</h2><br>
-            <p>This guide is set up to help you be successful inside and outside of the classroom. We have included the following resources throughout our site:</p>
+            <p>This guide is set up to help you be successful inside and outside of the classroom. We have included the following resources:</p>
         </section>
         <div class="indexResources">
             <p><a href="academic.html">Academic Resources</a></p>
@@ -118,6 +118,28 @@
                 </div>
             </div>
         </section>
+
+        <section id="suggestion-form" class="transparentBox">
+            <div class="formContainer">
+                <div class="formText">
+                    <h2>Have a resource to suggest?</h2>
+                    <p>We value your input! Please use the form below to suggest resources that you think should be added to our portal.</p>
+                </div>
+
+                <form action="/submit-suggestion" method="POST" id="suggestionForm" class="suggestionForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        
+                    <label for="suggestion">Suggestion:</label><br>
+                    <textarea id="suggestion" name="suggestion" rows="4" placeholder="Describe your suggested resource here..." required></textarea><br><br>
+        
+                    <button type="submit">Submit Suggestion</button>
+                </form>
+            </div>
+        </section>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
@@ -128,11 +150,17 @@
         <div>
             <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a><br><br>
             <a id="contact" href="https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a>
-            <p>© Copyrights <span id="year"></span> by Julia Mei. All rights reserved.</p>
+            <p>© Copyrights <span id="year"></span> by Julia Mei.<br>All rights reserved.</p>
         </div>
     </footer>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
+
+        document.getElementById("suggestionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Can't send anything yet!");
+        });
+    </script>
     </script>
 </body>
 </html>

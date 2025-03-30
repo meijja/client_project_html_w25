@@ -438,6 +438,10 @@ iframe {
     text-align: center;
 }
 
+#suggestion-form {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     body {
         padding-top: 0;
@@ -540,6 +544,7 @@ iframe {
 
     h3 {
         font-size: 1.8vw;
+        margin-bottom: 1vw;
     }
 
     #mobile {
@@ -636,6 +641,10 @@ iframe {
         margin: 4vw 8vw 0vw 8vw;
     }
 
+    .simpleBlue, .simpleYel {
+        font-size: 1.3vw;
+    }
+
     .blueBox, .yelBox {
         margin: 6vw 8vw 6vw 8vw;
     }
@@ -693,5 +702,58 @@ iframe {
 
     .error p {
         font-size: 1.5vw;
+    }
+
+    #suggestion-form {
+        display: block;
+    }
+
+    .formContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2rem 1.5rem;
+        background-color: #ffebb3;
+        border-radius: 2vw;
+        gap: 5vw;
+    }
+
+    form {
+        font-family: 'Atkinson Hyperlegible';
+        width: 50%;
+    }
+
+    .formText {
+        width: 50%;
+    }
+
+    .suggestionForm {
+        align-self: center;
+        margin-right: 2vw;
+    }
+
+    .suggestionForm input,
+    .suggestionForm textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .suggestionForm button {
+        background-color: #00274C;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .suggestionForm button:hover {
+        background-color: #FFCB05;
+        color: black;
     }
 }

@@ -18,21 +18,28 @@
             </a>
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="page_1.html">Academic</a></li>
-                <li><a href="page_2.html">Health</a></li>
-                <li><a href="page_3.html">Community</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="community.html">Community</a></li>
             </ul>
         </nav>
-        <h1>Student Success Portal</h1>
+        <h1 id="mobile">Student Success Portal</h1>
+
+        <div class="hero-image" id="main-hero">
+            <div class="hero-text" id="main-hero-text">
+              <h1>Student Success Portal</h1>
+              <h2>Welcome to the UM Grad Success Navigator!</h2>
+            </div>
+          </div>
     </header>
     
     <main id="main">
         <section class="intro">
-            <h2 class="smallBox">Welcome to the UM Grad Success Navigator!</h2><br>
-            <p>This guide is set up to help you be successul inside and outside of the classroom. We have included the following resources throughout our site:</p>
+            <h2 class="smallBox" id="mobile">Welcome to the UM Grad Success Navigator!</h2><br>
+            <p>This guide is set up to help you be successful inside and outside of the classroom. We have included the following resources throughout our site:</p>
         </section>
         <div class="indexResources">
-            <p><a href="page_1.html">Academic Resources</a></p>
+            <p><a href="academic.html">Academic Resources</a></p>
             <p><a href="#physical">Physical Health</a></p>
             <p><a href="#mental">Mental Health</a></p>
             <p><a href="#life-outside-classroom">Life Outside the Classroom</a></p>
@@ -121,7 +128,11 @@
         <div>
             <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a><br><br>
             <a id="contact" href="https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a>
+            <p>© Copyrights <span id="year"></span> by Julia Mei. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

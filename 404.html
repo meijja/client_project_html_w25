@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Atkinson%20Hyperlegible'>
+    <title>Student Success Portal</title>
+</head>
+
+<body>
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        <nav>
+            <a href="https://www.si.umich.edu/">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <div class="error">
+            <h1>Uh oh, this page doesn't exist!</h1>
+            <p>Sometimes not all information can be found. Click on the navigation bar to go to where you need.</p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.si.umich.edu/">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </a>
+        <div>
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a><br><br>
+            <a id="contact" href="https://www.si.umich.edu/about-umsi/contact-us">Contact Us</a>
+            <p>© Copyrights <span id="year"></span> by Julia Mei. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

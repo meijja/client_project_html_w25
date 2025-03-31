@@ -551,6 +551,10 @@ iframe {
         display: none;
     }
 
+    #mobile2 {
+        display: none;
+    }
+
     /* The hero image */
     .hero-image {
         display: block;
@@ -647,12 +651,13 @@ iframe {
 
     .blueBox, .yelBox {
         margin: 6vw 8vw 6vw 8vw;
-    }
-
-    #support-flex {
         display: flex;
         align-items: center;
         gap: 2vw;
+    }
+
+    #no-flex {
+        display: block;
     }
 
     .blueBox, .yelBox p {
